@@ -19,6 +19,6 @@ public class AgentController : MonoBehaviour
         directionToPlayer.y = 0;
         Vector3 playerForward = player.forward;
         float dotProduct = Vector3.Dot(playerForward, directionToPlayer.normalized);
-        agent.speed = dotProduct < 0 ? 10f : 50f;
+        agent.speed = dotProduct < 0 ? 25f : 50f;
     }
 }
